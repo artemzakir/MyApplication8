@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.View.MainFragment">
+
+    <TextView
+        android:id="@+id/t_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите список"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/t_name"
+        app:layout_constraintVertical_bias="0.501">
+
+        <TextView
+            android:id="@+id/t_qcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выберите кол-во вопросов:" />
+
+        <EditText
+            android:id="@+id/e_qcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541">
+
+        <Button
+            android:id="@+id/b_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Рандомные вопросы" />
+
+        <Button
+            android:id="@+id/b_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Мои вопросы" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b_clear_db"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="20dp"
+        android:text="Очистить данные"
+        app:layout_constraintBottom_toTopOf="@id/b_add_task"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/b_add_task"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="16dp"
+        android:text="Добавить задание"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="247dp"
+        android:layout_height="20dp"
+
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="176dp"
+        android:text="Последнее просмотренное задание:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/t_tasktextmenu"
+        android:layout_width="247dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="128dp"
+        android:text="Ничего"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
